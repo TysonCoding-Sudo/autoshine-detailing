@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoShine Detailing &amp; Spraypainting | Mpumalanga</title>
+  <meta name="description" content="Premium car detailing and spray painting in Mpumalanga. Ceramic coating, interior steam cleaning, panel spray and more. Call 066 296 8646." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__mark">
+        <svg viewBox="0 0 96 96" fill="none">
+          <defs>
+            <linearGradient id="plg" x1="0" y1="0" x2="96" y2="96">
+              <stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/>
+            </linearGradient>
+          </defs>
+          <path d="M16 60c4-14 16-24 30-24h4c14 0 26 10 30 24l2 6H14l2-6Z" fill="url(#plg)" opacity="0"/>
+          <circle cx="30" cy="68" r="5" fill="#1b1b20"/>
+          <circle cx="66" cy="68" r="5" fill="#1b1b20"/>
+          <circle class="preloader__wheel" cx="30" cy="68" r="2.5" fill="#fbbf24"/>
+          <circle class="preloader__wheel" cx="66" cy="68" r="2.5" fill="#fbbf24"/>
+        </svg>
+      </div>
+      <div class="preloader__shine"></div>
+      <p class="preloader__brand">AUTOSHINE</p>
+      <div class="preloader__bar"><div class="preloader__fill" id="preloaderFill"></div></div>
+      <p class="preloader__count" id="preloaderCount">0%</p>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 15c1-3.5 4-6 7.5-6h1C16 9 19 11.5 20 15l.5 1.5H3.5L4 15Z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg>
+        </span>
+        <span class="nav__logo-text">AUTOSHINE<small>DETAILING &amp; SPRAYPAINTING</small></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">Why Us</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:+27662968646" class="btn btn--ghost nav__cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+        <span>066 296 8646</span>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#home">Home</a>
+      <a href="#about">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+27662968646" class="btn btn--gold">Call 066 296 8646</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="hero__tag reveal">Mpumalanga's Finest Detail Studio</span>
+        <h1 class="hero__title">
+          <span class="word" style="--i:0">SHOWROOM</span>
+          <span class="word" style="--i:1">FINISH,</span>
+          <span class="word word--gold" style="--i:2">EVERY</span>
+          <span class="word" style="--i:3">TIME.</span>
+        </h1>
+        <p class="hero__sub reveal" style="--d:.6s">Professional detailing and spray painting that makes your pride-and-joy look like it just rolled off the line. 838 Allemansdrift, Mbibane.</p>
+        <div class="hero__actions reveal" style="--d:.8s">
+          <a href="tel:+27662968646" class="btn btn--gold magnetic">
+            Book Now
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#services" class="btn btn--ghost magnetic">Explore Services</a>
+        </div>
+        <div class="hero__stats reveal" style="--d:1s">
+          <div class="hero__stat">
+            <strong><span class="count" data-count="8">0</span>+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="hero__stat">
+            <strong><span class="count" data-count="2400">0</span>+</strong>
+            <span>Vehicles Detailed</span>
+          </div>
+          <div class="hero__stat">
+            <strong><span class="count" data-count="98">0</span>%</strong>
+            <span>Happy Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual reveal" style="--d:.4s">
+        <div class="hero__car" id="heroCar">
+          <svg viewBox="0 0 640 340" fill="none">
+            <defs>
+              <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffd166"/>
+                <stop offset=".55" stop-color="#f6a51f"/>
+                <stop offset="1" stop-color="#c77800"/>
+              </linearGradient>
+              <linearGradient id="carGlass" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3c414d"/>
+                <stop offset="1" stop-color="#14161c"/>
+              </linearGradient>
+              <linearGradient id="carUnder" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2a2c33"/>
+                <stop offset="1" stop-color="#121318"/>
+              </linearGradient>
+              <radialGradient id="carShine" cx=".3" cy="0" r="1.2">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <path d="M112 250c-18-4-30-18-34-36l-14-4a12 12 0 0 1-8-15l6-18a12 12 0 0 1 11-8h30l6-26c4-16 18-27 34-28h158c20 0 38 11 46 29l34 25h70a52 52 0 0 1 52 52v6a12 12 0 0 1-12 12l-64-2" fill="url(#carBody)" stroke="#8f5a00" stroke-width="2"/>
+            <path d="M84 248l-14-4a12 12 0 0 1-8-15l6-18a12 12 0 0 1 11-8h30l6-26c4-16 18-27 34-28h158c20 0 38 11 46 29l34 25h70" fill="url(#carShine)"/>
+            <path d="M174 92c-16 1-30 12-34 28l-8 36h128l4-52c3-8 10-13 18-13l-38-2c-24-2-48 0-70 3Z" fill="url(#carGlass)" stroke="#0d0e12" stroke-width="2"/>
+            <path d="M470 112l-30-22c-8-18-26-29-46-29h-30c-8 0-15 5-18 13l-4 52h128v-14Z" fill="url(#carGlass)" stroke="#0d0e12" stroke-width="2"/>
+            <path d="M86 244l10 26h392l12-28-46-10-20-28c-8-18-26-29-46-29h-64c-14 0-27 7-35 18l-20 30-76 8-117-16 10 29Z" fill="url(#carUnder)"/>
+            <path d="M84 248h56M356 252h60" stroke="#1b1b20" stroke-width="6"/>
+            <circle cx="188" cy="272" r="42" fill="#1b1b20"/>
+            <circle cx="468" cy="272" r="42" fill="#1b1b20"/>
+            <circle cx="188" cy="272" r="18" fill="#34363e" stroke="#4a4d57" stroke-width="2"/>
+            <circle cx="468" cy="272" r="18" fill="#34363e" stroke="#4a4d57" stroke-width="2"/>
+            <circle cx="188" cy="272" r="3" fill="#fbbf24"/>
+            <circle cx="468" cy="272" r="3" fill="#fbbf24"/>
+            <path d="M60 212l24-6M92 236l30-8" stroke="#ffd166" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"/>
+            <path d="M520 92l6 10a16 16 0 0 1-12 14l-22 4" stroke="#ffd166" stroke-opacity=".4" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="hero__car-sheen"></div>
+          <div class="hero__halo"></div>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-pulse"></span>
+          Ceramic Coated
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span class="hero__scroll-mouse"><span></span></span>
+    </a>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track" id="tickerTrack">
+      <span>Ceramic Coating</span><i>✦</i>
+      <span>Spray Painting</span><i>✦</i>
+      <span>Interior Steam Clean</span><i>✦</i>
+      <span>Engine Bay Detailing</span><i>✦</i>
+      <span>Headlight Restoration</span><i>✦</i>
+      <span>Full Body Polish</span><i>✦</i>
+      <span>Leather Care</span><i>✦</i>
+      <span>Mobile Detailing</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__media reveal">
+          <div class="about__frame">
+            <svg viewBox="0 0 560 400" class="about__svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#23262e"/><stop offset="1" stop-color="#131519"/>
+                </linearGradient>
+                <linearGradient id="spray" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#f97316"/>
+                </linearGradient>
+              </defs>
+              <rect width="560" height="400" rx="24" fill="url(#floor)"/>
+              <g stroke="#2c303a">
+                <line x1="0" y1="340" x2="560" y2="340"/><line x1="0" y1="355" x2="560" y2="355"/><line x1="0" y1="370" x2="560" y2="370"/><line x1="0" y1="385" x2="560" y2="385"/>
+              </g>
+              <path d="M120 300c-12-3-20-12-23-24l-9-3a8 8 0 0 1-5-10l4-12a8 8 0 0 1 7-5h20l4-17c3-11 12-18 23-19h105c13 0 25 7 30 19l23 17h47a35 35 0 0 1 35 35v4a8 8 0 0 1-8 8l-43-1" fill="#8b1a1a"/>
+              <path d="M296 176c-11 1-20 8-23 19l-5 24h85l3-34c2-5 7-9 12-9l-25-1c-16-1-31 0-47 1Z" fill="#0d0e12"/>
+              <circle cx="175" cy="292" r="28" fill="#0b0c0f"/><circle cx="355" cy="292" r="28" fill="#0b0c0f"/>
+              <circle cx="175" cy="292" r="12" fill="#20232b"/><circle cx="355" cy="292" r="12" fill="#20232b"/>
+              <path d="M160 270c40-24 90-30 140-20l80 18-46 12-56-12-64 14-58-6" fill="#15171c" stroke="#2a2d35"/>
+              <line x1="370" y1="230" x2="352" y2="262" stroke="#fff" stroke-opacity=".6" stroke-width="5" stroke-linecap="round"/>
+              <line x1="352" y1="262" x2="366" y2="278" stroke="#fff" stroke-opacity=".25" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="370" cy="222" r="16" fill="url(#spray)"/>
+              <g class="about__sparks">
+                <rect x="352" y="204" width="4" height="8" rx="2" fill="#f97316"/><rect x="372" y="196" width="4" height="8" rx="2" fill="#fb923c"/><rect x="388" y="212" width="4" height="8" rx="2" fill="#fbbf24"/><rect x="362" y="190" width="4" height="8" rx="2" fill="#ef4444"/>
+              </g>
+              <text x="280" y="68" text-anchor="middle" font-family="Sora, sans-serif" font-weight="700" font-size="22" fill="#ffd166">WHY AUTOSHINE?</text>
+              <text x="280" y="94" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#8b909c">Spray booth · Ceramic studio · Steam clean bay</text>
+            </svg>
+          </div>
+          <div class="about__chip chip--1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4-8 4-8-4 8-4Z"/><path d="M4 11l8 4 8-4"/><path d="M4 15l8 4 8-4"/></svg>
+            Premium Products
+          </div>
+          <div class="about__chip chip--2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            8+ Years
+          </div>
+        </div>
+        <div class="about__copy">
+          <span class="section__tag reveal">About Us</span>
+          <h2 class="section__title reveal">More than a wash.<br/>A <em>detail.</em></h2>
+          <p class="reveal">Based in the heart of Mpumalanga, AutoShine Detailing &amp; Spraypainting restores vehicles to showroom condition — inside and out. From hand-polished paint to factory-grade panel sprays, every job leaves our studio looking better than the day it was built.</p>
+          <ul class="about__list">
+            <li class="reveal"><span>01</span> Certified ceramic coating with 5-year warranty options</li>
+            <li class="reveal"><span>02</span> Dust-controlled spray booth for flawless colour matching</li>
+            <li class="reveal"><span>03</span> Steam sanitation — safe for leather, cloth &amp; families</li>
+            <li class="reveal"><span>04</span> Free collection &amp; delivery within Mbibane area</li>
+          </ul>
+          <div class="about__stats reveal">
+            <div class="stat-box">
+              <strong><span class="count" data-count="8">0</span>+</strong>
+              <span>Years</span>
+            </div>
+            <div class="stat-box">
+              <strong><span class="count" data-count="2400">0</span>+</strong>
+              <span>Cars Detailed</span>
+            </div>
+            <div class="stat-box">
+              <strong><span class="count" data-count="98">0</span>%</strong>
+              <span>Return Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services section section--alt" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag reveal">What We Do</span>
+        <h2 class="section__title reveal">Services built for <em>obsession.</em></h2>
+        <p class="section__sub reveal">Every detail counts. Pick a package or mix and match.</p>
+      </div>
+      <div class="services__grid">
+        <article class="card tilt reveal" data-tilt>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 4-8 4-8-4 8-4Z"/><path d="M4 11l8 4 8-4"/><path d="M4 15l8 4 8-4"/><path d="M4 19l8 4 8-4"/></svg>
+          </div>
+          <h3>Ceramic Coating</h3>
+          <p>Multi-layer nano-ceramic protection with deep gloss, hydrophobic finish and up to 5-year paint defence.</p>
+          <span class="card__link">From R950 <i>→</i></span>
+        </article>
+        <article class="card tilt reveal" data-tilt>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M7 5l2 3M17 5l-2 3M5 9h14l-1 10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 9Z"/><path d="M9 13h6M9 17h4"/></svg>
+          </div>
+          <h3>Spray Painting</h3>
+          <p>Panel and full-body resprays in our dust-controlled booth, with factory-matched colour and UV-cured clear coat.</p>
+          <span class="card__link">From R1 800 <i>→</i></span>
+        </article>
+        <article class="card tilt reveal" data-tilt>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h11a4 4 0 0 1 0 8H8"/><path d="M4 15h4"/><path d="M8 11h8"/><circle cx="6.5" cy="7" r="1.2"/><circle cx="6.5" cy="15" r="1.2"/><path d="M17 19h3M18.5 17.5V20"/></svg>
+          </div>
+          <h3>Interior Steam Clean</h3>
+          <p>Deep steam extraction for seats, carpets and trims. Kills 99.9% of bacteria — safe for kids and pets.</p>
+          <span class="card__link">From R600 <i>→</i></span>
+        </article>
+        <article class="card tilt reveal" data-tilt>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 17l2-6 2 6M3.5 15.5h3"/><path d="M10 17v-6h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M15 17v-6h2.5a2 5 0 0 1 0 5H15"/><circle cx="6" cy="6" r="1.6"/></svg>
+          </div>
+          <h3>Engine Bay Detailing</h3>
+          <p>Careful degreasing, dressing and protection for hoses and plastics — cleaner engine, cooler runs.</p>
+          <span class="card__link">From R450 <i>→</i></span>
+        </article>
+        <article class="card tilt reveal" data-tilt>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="18" cy="15" r="3.5"/><path d="M15.8 15H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h7l2 3h5a2 2 0 0 1 2 2v4.2"/><path d="M18 11v1"/><path d="M6 18h6"/></svg>
+          </div>
+          <h3>Headlight Restoration</h3>
+          <p>Wet-sand and seal faded lenses back to crystal clarity for safer night driving and a fresh front end.</p>
+          <span class="card__link">From R350 <i>→</i></span>
+        </article>
+        <article class="card tilt reveal" data-tilt>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 10l3-3M8 14l7-7M8 17h4"/><path d="M13 14.5l2.5 2.5M15.5 12.5V17"/></svg>
+          </div>
+          <h3>Full Body Polish</h3>
+          <p>Multi-stage machine polish that removes swirls, scratches and oxidation, leaving a mirror-depth shine.</p>
+          <span class="card__link">From R1 200 <i>→</i></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag reveal">Pricing</span>
+        <h2 class="section__title reveal">Simple, honest <em>packages.</em></h2>
+        <p class="section__sub reveal">No hidden extras. Quotes confirmed before we start.</p>
+      </div>
+      <div class="pricing__grid">
+        <article class="price-card reveal" data-tilt>
+          <h3>Quick Shine</h3>
+          <p class="price-card__desc">Perfect for maintenance between full details</p>
+          <p class="price-card__price"><span>R</span>349</p>
+          <ul>
+            <li>Exterior hand wash &amp; tyre shine</li>
+            <li>Interior vacuum &amp; dash wipe</li>
+            <li>Glass polish</li>
+            <li>Air freshener</li>
+          </ul>
+          <a href="tel:+27662968646" class="btn btn--ghost btn--block magnetic">Book Quick Shine</a>
+        </article>
+        <article class="price-card price-card--featured reveal" data-tilt>
+          <span class="price-card__badge">Most Popular</span>
+          <h3>Showroom Detail</h3>
+          <p class="price-card__desc">The full AutoShine experience</p>
+          <p class="price-card__price"><span>R</span>1 450</p>
+          <ul>
+            <li>Everything in Quick Shine</li>
+            <li>Machine polish &amp; wax</li>
+            <li>Steam interior deep clean</li>
+            <li>Engine bay detail</li>
+            <li>Headlight restoration</li>
+          </ul>
+          <a href="tel:+27662968646" class="btn btn--gold btn--block magnetic">Book Showroom</a>
+        </article>
+        <article class="price-card reveal" data-tilt>
+          <h3>Ceramic Guard</h3>
+          <p class="price-card__desc">Long-term protection, showroom gloss</p>
+          <p class="price-card__price"><span>R</span>2 950</p>
+          <ul>
+            <li>Everything in Showroom Detail</li>
+            <li>Multi-layer ceramic coating</li>
+            <li>5-year paint warranty</li>
+            <li>Free maintenance wash x2</li>
+          </ul>
+          <a href="tel:+27662968646" class="btn btn--ghost btn--block magnetic">Book Ceramic</a>
+        </article>
+      </div>
+      <p class="pricing__note reveal">Spray painting quoted per panel — call <a href="tel:+27662968646">066 296 8646</a> for a free assessment.</p>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery section section--alt" id="gallery">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag reveal">Gallery</span>
+        <h2 class="section__title reveal">Results that <em>speak.</em></h2>
+        <p class="section__sub reveal">Hover to preview — real work from our studio.</p>
+      </div>
+      <div class="gallery__grid">
+        <figure class="gallery__item reveal" data-tilt>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2f38"/><stop offset="1" stop-color="#15171d"/></linearGradient>
+              <linearGradient id="g1car" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c0c7d4"/><stop offset="1" stop-color="#6d7482"/></linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#g1)"/>
+            <path d="M60 230c-10-3-17-11-19-20l-8-3-4 12 6 11h25Z" fill="#0d0e12"/>
+            <path d="M80 190c6-18 20-30 38-33h60c18 3 32 15 38 33l14 20h-138l-12-20Z" fill="url(#g1car)"/>
+            <path d="M180 220h120l-14-20c-6-18-20-30-38-33h-38l-30 53Z" fill="url(#g1car)"/>
+            <circle cx="110" cy="232" r="16" fill="#0b0c0f"/><circle cx="270" cy="232" r="16" fill="#0b0c0f"/>
+            <text x="200" y="100" text-anchor="middle" font-family="Bebas Neue" font-size="34" fill="#ffd166" letter-spacing="2">CERAMIC COATING</text>
+          </svg>
+          <figcaption><span>Ceramic Coating</span><small>Gloss depth after 3 layers</small></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-tilt>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#23262e"/><stop offset="1" stop-color="#121419"/></linearGradient>
+              <linearGradient id="g2car" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f04444"/><stop offset="1" stop-color="#a31616"/></linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#g2)"/>
+            <path d="M70 230c-9-3-16-10-18-19l-8-3 4 12 6 10h16Z" fill="#0d0e12"/>
+            <path d="M90 190c5-17 18-28 35-31h58c17 3 30 14 35 31l13 20h-141l0 0l-12-20Z" fill="url(#g2car)"/>
+            <path d="M180 220h120l-13-20c-5-17-18-28-35-31h-35l-37 51Z" fill="url(#g2car)"/>
+            <circle cx="108" cy="232" r="15" fill="#0b0c0f"/><circle cx="266" cy="232" r="15" fill="#0b0c0f"/>
+            <path d="M190 160h120l-10 14h-100l-10-14Z" fill="#8a0f0f"/>
+            <text x="200" y="100" text-anchor="middle" font-family="Bebas Neue" font-size="34" fill="#ffb4a2" letter-spacing="2">PANEL RESPRAY</text>
+          </svg>
+          <figcaption><span>Panel Respray</span><small>Colour-matched boot lid</small></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-tilt>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e2b24"/><stop offset="1" stop-color="#16140f"/></linearGradient>
+              <linearGradient id="g3car" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5b2e"/><stop offset="1" stop-color="#3d2b12"/></linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#g3)"/>
+            <rect x="40" y="60" width="320" height="10" rx="5" fill="#0c0d10"/>
+            <rect x="40" y="80" width="320" height="180" rx="14" fill="url(#g3car)"/>
+            <rect x="40" y="120" width="320" height="8" fill="#0c0d10"/>
+            <path d="M60 260l-10 18h300l-10-18H60Z" fill="#0c0d10"/>
+            <circle cx="110" cy="300" r="22" fill="#0b0c0f"/><circle cx="290" cy="300" r="22" fill="#0b0c0f"/>
+            <text x="200" y="105" text-anchor="middle" font-family="Bebas Neue" font-size="34" fill="#ffd166" letter-spacing="2">LEATHER REVIVE</text>
+          </svg>
+          <figcaption><span>Leather Revive</span><small>Interior steam + conditioning</small></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-tilt>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f232b"/><stop offset="1" stop-color="#101216"/></linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#g4)"/>
+            <circle cx="200" cy="150" r="60" fill="#0c0e12" stroke="#3a3f4b" stroke-width="3"/>
+            <circle cx="200" cy="150" r="44" fill="none" stroke="#1a1d24" stroke-width="4"/>
+            <circle cx="200" cy="150" r="14" fill="#ffd166"/>
+            <circle cx="200" cy="150" r="30" fill="none" stroke="#ffd166" stroke-dasharray="2 10" opacity=".6"/>
+            <circle cx="200" cy="150" r="58" fill="none" stroke="#ffd166" stroke-dasharray="3 18" opacity=".35"/>
+            <g fill="#ffd166" opacity=".9"><path d="M200 150l-18 4 18 8 18-8-18-4Z"/></g>
+            <text x="200" y="268" text-anchor="middle" font-family="Bebas Neue" font-size="30" fill="#ffd166" letter-spacing="2">HEADLIGHT GLOW</text>
+            <text x="200" y="290" text-anchor="middle" font-family="Inter" font-size="11" fill="#8b909c">Before / after clarity</text>
+          </svg>
+          <figcaption><span>Headlight Glow</span><small>Restored, sealed, protected</small></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-tilt>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="g5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#252832"/><stop offset="1" stop-color="#121419"/></linearGradient>
+              <linearGradient id="g5car" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3e8dff"/><stop offset="1" stop-color="#143d7a"/></linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#g5)"/>
+            <path d="M70 230c-9-3-16-10-18-19l-8-3 4 12 6 10h16Z" fill="#0d0e12"/>
+            <path d="M90 190c5-17 18-28 35-31h58c17 3 30 14 35 31l13 20h-141l-12-20Z" fill="url(#g5car)"/>
+            <path d="M180 220h120l-13-20c-5-17-18-28-35-31h-35l-37 51Z" fill="url(#g5car)"/>
+            <circle cx="108" cy="232" r="15" fill="#0b0c0f"/><circle cx="266" cy="232" r="15" fill="#0b0c0f"/>
+            <rect x="0" y="140" width="400" height="6" fill="#ffffff" opacity=".18"/>
+            <path d="M60 150l140-60 100 30 70-16" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/>
+            <text x="200" y="100" text-anchor="middle" font-family="Bebas Neue" font-size="34" fill="#9cc6ff" letter-spacing="2">MACHINE POLISH</text>
+          </svg>
+          <figcaption><span>Machine Polish</span><small>Swirl-free mirror finish</small></figcaption>
+        </figure>
+        <figure class="gallery__item reveal" data-tilt>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs>
+              <linearGradient id="g6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#262218"/><stop offset="1" stop-color="#131109"/></linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#g6)"/>
+            <rect x="30" y="70" width="340" height="150" rx="12" fill="#0e0f13"/>
+            <g stroke="#ffd166" stroke-opacity=".85"><path d="M80 100l4 26M96 100l4 26M112 100l4 26M128 100l4 26M144 100l4 26"/></g>
+            <g stroke="#ffd166" stroke-opacity=".5"><path d="M90 90l3 20M106 90l3 20M122 90l3 20M138 90l3 20"/></g>
+            <rect x="60" y="140" width="280" height="56" rx="8" fill="#1a1c22"/>
+            <circle cx="200" cy="168" r="10" fill="none" stroke="#ffd166" stroke-width="2"/>
+            <circle cx="200" cy="168" r="3" fill="#ffd166"/>
+            <text x="200" y="252" text-anchor="middle" font-family="Bebas Neue" font-size="30" fill="#ffd166" letter-spacing="2">ENGINE BAY DETAIL</text>
+          </svg>
+          <figcaption><span>Engine Bay Detail</span><small>Degreased &amp; dressed</small></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag reveal">Testimonials</span>
+        <h2 class="section__title reveal">Loved by drivers across <em>Mpumalanga.</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <blockquote class="t-card reveal">
+          <div class="t-card__stars">★★★★★</div>
+          <p>"My bakkie hadn't looked this good since I bought it. The ceramic coat is unreal — water just rolls off."</p>
+          <footer>
+            <span class="t-card__avatar">T</span>
+            <div><strong>Themba M.</strong><small>Nelspruit</small></div>
+          </footer>
+        </blockquote>
+        <blockquote class="t-card reveal" style="--d:.15s">
+          <div class="t-card__stars">★★★★★</div>
+          <p>"They resprayed my front bumper after a scrape. Perfect colour match, you honestly can't see the repair."</p>
+          <footer>
+            <span class="t-card__avatar">L</span>
+            <div><strong>Lerato K.</strong><small>Mbibane</small></div>
+          </footer>
+        </blockquote>
+        <blockquote class="t-card reveal" style="--d:.3s">
+          <div class="t-card__stars">★★★★★</div>
+          <p>"Professional, punctual and the interior smells brand new. My kids' messes stood no chance."</p>
+          <footer>
+            <span class="t-card__avatar">S</span>
+            <div><strong>Sibusiso N.</strong><small>White River</small></div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section section--alt" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__copy">
+        <span class="section__tag reveal">Get In Touch</span>
+        <h2 class="section__title reveal">Ready for your car to <em>shine?</em></h2>
+        <p class="reveal">Call us for a free quote, or send a booking request and we'll get back to you within one hour during business hours.</p>
+        <div class="contact__info">
+          <a class="reveal" href="tel:+27662968646">
+            <span class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div><strong>Call / WhatsApp</strong><small>066 296 8646</small></div>
+          </a>
+          <div class="reveal">
+            <span class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div><strong>Visit The Studio</strong><small>838 Allemansdrift, Mbibane, 0449</small></div>
+          </div>
+          <div class="reveal">
+            <span class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <div><strong>Business Hours</strong><small>Mon – Sat · 7:30 – 17:30</small></div>
+          </div>
+        </div>
+        <div class="contact__map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=838+Allemansdrift+Mbibane+0449+South+Africa&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="AutoShine Detailing studio location"
+            allowfullscreen
+          ></iframe>
+          <p>Find us at 838 Allemansdrift, Mbibane, 0449</p>
+        </div>
+      </div>
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="fName" name="name" placeholder=" " required />
+          <label for="fName">Your Name</label>
+        </div>
+        <div class="field">
+          <input type="tel" id="fPhone" name="phone" placeholder=" " required />
+          <label for="fPhone">Phone Number</label>
+        </div>
+        <div class="field">
+          <select id="fService" name="service" required>
+            <option value="" disabled selected></option>
+            <option>Quick Shine — R349</option>
+            <option>Showroom Detail — R1 450</option>
+            <option>Ceramic Guard — R2 950</option>
+            <option>Spray Painting (quote)</option>
+            <option>Other / Not Sure</option>
+          </select>
+          <label for="fService">Service Needed</label>
+        </div>
+        <div class="field">
+          <textarea id="fMessage" name="message" rows="4" placeholder=" "></textarea>
+          <label for="fMessage">Anything we should know? (optional)</label>
+        </div>
+        <button type="submit" class="btn btn--gold btn--block magnetic" id="formBtn">
+          <span class="btn__label">Request Booking</span>
+          <span class="btn__loader"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="form__note" id="formNote">We'll confirm your booking by phone.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 15c1-3.5 4-6 7.5-6h1C16 9 19 11.5 20 15l.5 1.5H3.5L4 15Z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg>
+          </span>
+          <span class="nav__logo-text">AUTOSHINE<small>DETAILING &amp; SPRAYPAINTING</small></span>
+        </a>
+        <p>Showroom finish, every time. Serving Mbibane, Nelspruit, White River and surrounding Mpumalanga.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <a href="#services">Ceramic Coating</a>
+        <a href="#services">Spray Painting</a>
+        <a href="#services">Steam Cleaning</a>
+        <a href="#services">Full Body Polish</a>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:+27662968646">066 296 8646</a>
+        <a href="#contact">838 Allemansdrift, Mbibane, 0449</a>
+        <a href="#contact">Mon – Sat · 7:30 – 17:30</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> AutoShine Detailing &amp; Spraypainting. All rights reserved.</p>
+      <p>Made with shine in Mpumalanga ✦</p>
+    </div>
+  </footer>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <a href="tel:+27662968646" class="fab" id="fab" aria-label="Call AutoShine">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
