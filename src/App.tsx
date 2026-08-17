@@ -6,7 +6,6 @@ import { Services } from './components/Services'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { initScrollSync } from './lib/motion'
-import './App.css'
 
 export default function App() {
   useEffect(() => {
